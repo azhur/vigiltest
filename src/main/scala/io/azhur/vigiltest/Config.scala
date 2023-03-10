@@ -22,7 +22,7 @@ object Config {
         opt[String]('o', "outputPath")
           .required()
           .action((x, c) => c.copy(outputPath = x))
-          .text("s3 outputPath the result will be written to. example: s3a://aws-spark-test/csv-in"),
+          .text("s3 outputPath the result will be written to. example: s3a://aws-spark-test/csv-out"),
         opt[String]('p', "credentialsProfile")
           .optional()
           .action((x, c) => c.copy(credentialsProfile = Some(x)))
